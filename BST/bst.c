@@ -1,11 +1,11 @@
-//      Autor: Renan Grassi de Freitas Procopio 
+//      Autor: Renan Grassi de Freitas Procopio
 //      :^)
 //      Fonte: geeksforgeeks.com, codigo revisado!
 
 #include "bst.h"
 
-struct No* geraNo(int valor){
-    struct No* temp = (struct No*)malloc(sizeof(struct No));
+apontadorNo geraNo(int valor){
+    apontadorNo temp = (apontadorNo) malloc(sizeof(struct No));
     temp->Chave = valor;
     temp->filhoEsquerda = temp->filhoDireita = NULL;
     return temp;
@@ -38,7 +38,7 @@ struct No* inserir(struct No* no, int chave){
 
 //Funcao Main
 
-int main(){
+/*int main(){
 
     int menu = 0;
 
@@ -56,13 +56,12 @@ int main(){
                 struct No* raiz = NULL;
                 printf("Digite o valor a ser inserido:\n");
                 scanf("%d", &valor);
-                raiz = inserir(raiz, valor);        
+                raiz = inserir(raiz, valor);
                 break;
             case 2:
 
                 break;
             case 3:
-            
                 break;
             default:
             printf("Opcao invalida...\n");
@@ -70,10 +69,10 @@ int main(){
     }
 
     return 0;
-}
+}*/
 
 int main(){
-    struct No* raiz = NULL;
+    apontadorNo raiz = NULL;
     raiz = inserir(raiz, 50);
     inserir(raiz, 30);
     inserir(raiz, 20);
@@ -81,7 +80,7 @@ int main(){
     inserir(raiz, 70);
     inserir(raiz, 60);
     inserir(raiz, 80);
- 
+
     //Percorre transversalmente a Arvore em Ordem printando os valores.
     emOrdem(raiz);
 
