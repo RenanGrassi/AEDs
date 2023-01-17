@@ -1,3 +1,0 @@
-# AEDs
-Repositório geral de Algoritimos e Estruturas de Dados I e II do Renan Grassi e do Bieu Sanchez... 
-Sintam-se a vontade pra copiar! É pra copiar na cara dura mesmo!
