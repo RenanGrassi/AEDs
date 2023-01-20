@@ -74,7 +74,7 @@ struct No* inserir(struct No* no, int chave){
 int main(){
     apontadorNo raiz = NULL;
     raiz = inserir(raiz, 50);
-    inserir(raiz, 30);
+    inserir(raiz, 35);
     inserir(raiz, 20);
     inserir(raiz, 40);
     inserir(raiz, 70);
